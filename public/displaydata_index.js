@@ -1,0 +1,22 @@
+$("#entry-form").hide();
+$("#delete-form").hide();
+$("#new-entry").click(function(){
+    $("#entry-form").show(); 
+    $("#delete-form").hide();
+});
+$("table").click(function(){
+    $("#entry-form").hide();
+    $("#delete-form").hide();
+})
+$("#delete-entry").click(function(){
+    $("#entry-form").hide(); 
+    $("#delete-form").show();
+})
+$("#button").click(function(){
+    window.location.assign("/userlogin");
+    window.location.reload();
+    window.location.reload();
+})
+("#close").click(function(){
+    $("#entry-form").hide();
+})

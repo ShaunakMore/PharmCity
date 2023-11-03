@@ -1,0 +1,72 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    margin: 0;
+    padding-top: 20px;
+    justify-content: right;
+    font-family: 'Montserrat', sans-serif;
+    padding-right: 30px;
+}
+li{
+    color: white;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#nav-bar{
+    background-color: #582CE6;
+    padding: 0;
+    margin: 0;
+    height: 70px;
+    
+}
+form{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+#main{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+#city-search,#medicine-search{
+    font-size: 25px;
+    padding: 10px;
+}
+#search-btn{
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 10px;
+}
+table, th, td {
+    border:3px solid black;
+    border-radius: 5px;
+    margin: auto;
+    color: black;
+  }
+  th,td{
+    width: 300px;
+  }
+  th{
+    font-size: 30px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  table{
+
+    margin: auto;
+  }
+  td{
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmCity</title>
+    <link rel="stylesheet" href="/styles/displaydata_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <ul>
+        <li><button id="new-entry" formmethod="get" formaction="/loginuser/newentry">New Entry</button></li>
+        <li><button id="delete-entry" formmethod="get" formaction="/loginuser/deleteentry">Delete Entry</button></li>
+        <li><a href="/login"><button id="logout" formmethod="get" formaction="/loginuser/logout">Log Out</button></a></li>
+    </ul>
+    <table>
+        <tr>
+            <th>Sr.No.</th>
+            <th>Medicine Name</th>
+            <th>Price</th>
+            <th>Stock Status</th>
+        </tr>
+        <% var data %>
+        <% if (data!==undefined){%>
+        <% for(var i=0;i< data.length;i++){ %>
+            <tr>
+                <td><%=data[i].srno %></td>
+                <td><%=data[i].medname %></td>
+                <td><%= data[i].price %></td>
+                <td><%= data[i].stockstatus %></td>
+            </tr>
+            <% } %>
+        <% } %>
+    </table>
+    <div id="entry-form">
+        <p id="close">Close</p>
+        <form id="entry" action="/loginuser/newentry/enterdata" method="POST">
+            <p>Medicine Name</p>
+            <input type="text" name="medname">
+            <p>Price</p>
+            <input type="text" name="price">
+            <p>Stock Status</p>
+            <input type="text" name="stock">
+            <input id="button" type="submit" value="Create Entry">
+        </form>
+    </div>
+    <div id="delete-form">
+        <form action="/loginuser/delentry/deldata" method="post">
+            <a type="button" id="close" href="/userlogin">Close</a>
+            <p>Enter the medicine name whose entry you want to delete</p>
+            <input type="text" name="delmedname">
+            <input id="button" type="submit" value="Delete Entry">
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="displaydata_index.js"></script>
+</body>
+</html>

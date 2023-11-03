@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+    overflow: hidden;
+}
+h1,h2{
+    color: white;
+    text-align: center;
+}
+h1{
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+}
+h2{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+form{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+input{
+    font-size: 25px;
+    border-radius: 15px;
+    padding: 15px;
+}
+label{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+#submit{
+    margin: 11px;
+    padding: 12px;
+    border-radius: 25px;
+      
+}
+#details{
+    padding-top: 30px;
+}

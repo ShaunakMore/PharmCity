@@ -1,0 +1,104 @@
+body{
+background-color: white;
+
+}
+table, th, td {
+    border:3px solid black;
+    border-radius: 5px;
+    margin: auto;
+    color: black;
+  }
+  th,td{
+    width: 300px;
+  }
+  th{
+    font-size: 30px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  table{
+
+    margin: auto;
+  }
+  td{
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+  ul{
+    display: flex;
+    height: 75px;
+    list-style-type: none;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+  }
+  button{
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    background-color: #582CE6;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  #entry-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 60px;
+    border: 3px solid black;
+    position: absolute;
+    top: 20%;
+    border-radius: 25%;
+    left:25%;
+    background-size:100vw;
+    backdrop-filter: blur(5px);
+    background-size:100vw;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+  }
+  input{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 25px;
+    
+  }
+  p{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  #button{
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .blur{
+    filter: blur(5px);
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-align: right
+  }
+  #close{
+    font-size: 20px;
+    align-self: flex-end;
+  }
+  #delete-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 60px;
+    border: 3px solid black;
+    position: absolute;
+    top: 20%;
+    border-radius: 25%;
+    left:25%;
+    background-size:100vw;
+    backdrop-filter: blur(5px);
+    background-size:100vw;
+  }
